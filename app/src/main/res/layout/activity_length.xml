@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_length"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.admin.tatry.LengthActivity">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        style="@style/wielki_napis"
+                        android:text="Trasa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView" />
+
+                    <TextView
+                        style="@style/wielki_napis"
+                        android:text="Długość"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView2"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+
+                    <TextView
+                        style="@style/wielki_napis"
+                        android:text="Czas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView3"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                </TableRow>
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Ścieżka nad Reglami od Kalatówek"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/first" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView5"
+                        android:text="16.0 km"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+
+                    <TextView
+                        android:text="5h 45'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView6"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <Button
+                        android:id="@+id/Regle"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Ścieżka nad Reglami od doliny Dudowa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/second" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16.0 km"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+
+                    <TextView
+                        android:text="5h 45'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <Button
+                        android:id="@+id/Regle2"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed"/>
+                </TableRow>
+
+                <!--<TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Od kuźnickiej Polany do Kuźnic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/third" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16.0 km"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+
+                    <TextView
+                        android:text="5h 45'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+
+                    <Button
+                        android:id="@+id/PolanaKuznice"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed"/>
+                </TableRow>-->
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Na Starorobociański Wierch przez z Siwej Polany"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fourth" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12.5 km"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+
+                    <TextView
+                        android:text="4h 15'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+
+                    <Button
+                        android:id="@+id/StarorobocianskiWierch"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Do Wodogrzmotów Mickiewicza z Brzezin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fifth" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10.5 km"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+
+                    <TextView
+                        android:text="2h 45'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+
+                    <Button
+                        android:id="@+id/Brzeziny"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Nad Morskie Oko z Palenicy Białczańskiej"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sixth" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9.3 km"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+
+                    <TextView
+                        android:text="2h 0'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+
+                    <Button
+                        android:id="@+id/Palenica"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Na Starorobociański Wierch z Hali Ornak przez grzbiet Ornaku"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/seventh" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9.0 km"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+
+                    <TextView
+                        android:text="3h 45'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+
+                    <Button
+                        android:id="@+id/ZHaliOrnak"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed"/>
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Na Halę Gąsienicową z Rusinowej Polany"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/nineth" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9.0 km"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <TextView
+                        android:text="2h 45'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <Button
+                        android:id="@+id/Rusinowa"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Do Doliny Pięciu Stawów Polskich znad Morskiego Oka"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/eighth" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8.5 km"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <TextView
+                        android:text="3h 45'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <Button
+                        android:id="@+id/MorskieOko"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Nad Morskie Oko z Doliny Pięciu Stawów Polskich"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8.5 km"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <TextView
+                        android:text="4h 45'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <Button
+                        android:id="@+id/MorskieOko2"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Na Halę Ornak z Polany Chochołowskiej"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7.7 km"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <TextView
+                        android:text="2h 25'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <Button
+                        android:id="@+id/PolanaChocholowska2"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Na Kasprowy Wierch z Kuźnic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7.5 km"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <TextView
+                        android:text="2h 30'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <Button
+                        android:id="@+id/Kasprowy"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Na Halę Gąsienicową z Toporowej Cyrhli"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7.2 km"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <TextView
+                        android:text="2h 0'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <Button
+                        android:id="@+id/Cyrhla"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Na Szpiglasowy Wierch z Doliny Pięciu Stawów Polskich"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5.5 km"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <TextView
+                        android:text="2h 20'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <Button
+                        android:id="@+id/Szpiglas"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Na Rysy znad Morskiego Oka"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5.0 km"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <TextView
+                        android:text="3h 50'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <Button
+                        android:id="@+id/Rysy"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Żlebem Kulczyńskiego"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.8 km"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <TextView
+                        android:text="2h 25'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <Button
+                        android:id="@+id/Zleb"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Na Trzydniowiański i Kończysty Wierch z Polany Trzydniówki"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.8 km"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <TextView
+                        android:text="2h 30'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <Button
+                        android:id="@+id/Trzydniowka"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Na Gęsią Szyję z Zazadni"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.7 km"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <TextView
+                        android:text="1h 45'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <Button
+                        android:id="@+id/Zazdan"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Na Gęsią Szyję z Wierchu Poroniec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.5 km"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <TextView
+                        android:text="1h 20'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <Button
+                        android:id="@+id/Poroniec"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Na Halę Stoły z Kir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.3 km"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <TextView
+                        android:text="1h 20'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <Button
+                        android:id="@+id/Kir"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Na Kasprowy Wierch z Kopy Kondrackiej"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.2 km"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <TextView
+                        android:text="1h 55'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <Button
+                        android:id="@+id/Kopa"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Na Gubałówkę i Butorowy Wierch z Zakopanego"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.2 km"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <TextView
+                        android:text="1h 55'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <Button
+                        android:id="@+id/Zakopane"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Na Kościelec z Hali Gąsienicowej "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.0 km"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <TextView
+                        android:text="1h 50'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <Button
+                        android:id="@+id/Koscielec2"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Na Świnicę z Kasprowego Wierchu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3.5 km"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <TextView
+                        android:text="1h 40'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <Button
+                        android:id="@+id/Swinica"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Na Świnicę z Zawratu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1.5 km"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <TextView
+                        android:text="50'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <Button
+                        android:id="@+id/Zawrat"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Od Skrajnego Granatu do przełęczy Krzyżne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1.5 km"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <TextView
+                        android:text="1h 40'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <Button
+                        android:id="@+id/Granat"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Na Sarnią Skałę z Czerwonej Przełęczy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.5 km"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <TextView
+                        android:text="10'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons" />
+                    <Button
+                        android:id="@+id/Sarnia"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+</RelativeLayout>

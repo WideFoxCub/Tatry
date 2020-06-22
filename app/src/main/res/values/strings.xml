@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Szlaki w Tatrach</string>
+    <string name="title_activity_maps">Menu</string>
+    <string name="szlaki">Szlaki</string>
+    <string name="access_token">sk.eyJ1IjoiemlvdGVrIiwiYSI6ImNpdmZhY2VlMjAwNWoydG55MHVrZDM1eTAifQ.UWTJw3DyqvpU_jGtB9FyqA</string>
+    <string name="title_activity_menu">Wybierz szlak:</string>
+    <string name="title_activity_offline_maps">OfflineMapsActivity</string>
+</resources>

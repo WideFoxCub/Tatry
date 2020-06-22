@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/activity_schroniska"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Schronisko górskie PTTK na Polanie Chochołowskiej"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/first" />
+                    <Button
+                        android:id="@+id/PolanaChocholowska"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed2"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Schronisko górskie PTTK na Hali Ornak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/second" />
+                    <Button
+                        android:id="@+id/HalaOrnak"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed2"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Schronisko górskie PTTK na Hali Kondratowej"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/third" />
+                    <Button
+                        android:id="@+id/HalaKondratowa"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed2"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Schronisko Murowaniec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fourth" />
+                    <Button
+                        android:id="@+id/Murowaniec"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed2"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Schronisko PTTK w Dolinie Pięciu Stawów Polskich"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fifth" />
+                    <Button
+                        android:id="@+id/DolinaPieciuStawowPolskich"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed2"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Schronisko PTTK nad Morskim Okiem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sixth" />
+                    <Button
+                        android:id="@+id/NadMorskimOkiem"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed2"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Schronisko w Dolinie Roztoki"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/seventh" />
+                    <Button
+                        android:id="@+id/DolinaRoztoki"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed2"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="Schronisko Górskie Głodówka"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/eighth" />
+                    <Button
+                        android:id="@+id/Glodowka"
+                        android:text="GO!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cast_expanded_controller_margin_between_seek_bar_and_control_buttons"
+                        android:onClick="ButtonPressed2"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+</LinearLayout>
